@@ -1,704 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BraTeoMX</title>
+  <meta name="description" content="Soy Brayam y gracias por visitar mi Blog hecho con GitHub, estoy en diversas redes sociales como BraTeoMX, gracias.">
+  <meta name="author" content="BraTeoMX">
+  <meta name="keywords" content="BraTeoMX, brateomx,brayam teofilo jimenez, desarrollador, tecnología, redes, programacion, web">
 
-  <head>
-
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Soy Brayam y gracias por visitar mi Blog hecho con GitHub, estoy en diversas redes sociales como BraTeoMX, gracias.">
-    <meta name="author" content="BraTeoMX">
-    <meta name="keywords" content="BraTeoMX, brateomx, freelancer, redes, internet, web, platzi, lol, league of legends, github,"
-	  
-    <link rel="shortcut icon" href="ftco-32x32.png">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
-    
-
-    <title>El Blog de Brayam</title>
-<!--
-    Doy gracias a esta pagina, asi que por agradecimiento dejare su comentario donde puedes ir a visitar el sitio 
-    donde descargue esta Plantilla web
-SOFTY PINKO
-https://templatemo.com/tm-535-softy-pinko
--->
-
-    <!-- Additional CSS Files -->
-    
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-
-    <link rel="stylesheet" href="assets/css/templatemo-softy-pinko.css">
-
-    </head>
-    
-    <body>
-    
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>  
-    <!-- ***** Preloader End ***** -->
-    
-    
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            <img src="assets/images/logo.png" alt="BraTeoMX"/>
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="#welcome" class="active">Inicio</a></li>
-                            <li><a href="#features">Sobre mi</a></li>
-                            <!-- 
-                            <li><a href="#work-process">Work Process</a></li>
-                            <li><a href="#testimonials">Testimonials</a></li>
-                            <li><a href="#pricing-plans">Pricing Tables</a></li>
-                            -->
-                            <li><a href="#blog">Blog's</a></li>
-                            <li><a href="#contact-us">Contacto</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-
-    <!-- ***** Welcome Area Start ***** -->
-    <div class="welcome-area" id="welcome">
-
-        <!-- ***** Header Text Start ***** -->
-        <div class="header-text">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
-                        <h1>¡Hola mundo! <strong>Soy Brayam</strong>👨‍💻<br>y gracias por visitar mi <strong>Blog **Actualizacion** </strong></h1>
-                        <p>Espero que encuentres lo que estas buscando, 
-                        poco a poco estableceré y añadiré contenido! </p>
-                        <a href="#features" class="main-button-slider">click para bajar</a>
-					  <p>&nbsp;</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ***** Header Text End ***** -->
+  <!-- Favicon -->
+  <link rel="icon" href="img/hojeada.png" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- FontAwesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS7msxFqxB6eHE5K5k3b1U3axlM2ABeDlIfrYVPLxB5mxKwq5SAh" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #2c2c2e;
+      color: #e5e5e5;
+    }
+    .navbar, .footer, .card, .bg-dark-mode {
+      background-color: #3a3a3c;
+      color: #e5e5e5;
+    }
+    .navbar-brand, .nav-link {
+      color: #e5e5e5;
+    }
+    .nav-link:hover {
+      color: #a9a9a9;
+    }
+    .bg-primary {
+      background-color: #4a4a4e !important;
+    }
+    .lead, .container p {
+      color: #b0b0b0;
+    }
+    .ul-personalizado {
+      color: #b0b0b0;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #004080;
+    }
+    .icon {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark-mode">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mi Sitio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!-- ***** Welcome Area End ***** -->
+  </nav>
 
-    <!-- ***** Features Small Start ***** -->
-    <section class="section home-feature">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <!-- ***** Features Small Item Start 
-                            tambien este recordatorio obligado donde se muestra el contenido para dirigir un link ***** -->
-                        <a href="ligo-leyen.html"><div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
-                            <div class="features-small-item">
-                                <div class="icon">
-                                    
-                                    <i><img src="assets/images/icono-lol-medida.png" alt=""></i>
-                                </div>
-                                <h5 class="features-title">League of legends</h5>
-                                <p>Mi Pasión por los Videojuegos o.... Solo uno</p>
-                            </div>
-                        </a></div>
-                        <!-- ***** Features Small Item End ***** -->
+  <header id="inicio" class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1>Bienvenido a Mi Sitio Web</h1>
+      <p class="lead">Un sitio simple y responsivo con Bootstrap 5</p>
+    </div>
+  </header>
 
-                        <!-- ***** Features Small Item Start ***** -->
-                        <a href="tesina.html"><div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-                            <div class="features-small-item">
-                                <div class="icon">
-                                    <i><img src="assets/images/iconos-principal/nft.png" alt="" width="70"></i>
-                                </div>
-                                <h5 class="features-title">NFT</h5>
-                              <p>Tesina dedicada a los NFT, </p>
-                                
-                            </div>
-						</a> </div>
-                        <!-- ***** Features Small Item End ***** -->
-
-                        <!-- ***** Features Small Item Start ***** -->
-                        <a href="me.html"><div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
-                            <div class="features-small-item">
-                                <div class="icon">
-                                    <i><img src="assets/images/iconos-principal/me-xD.png" alt="" width="64"></i>
-                                </div>
-                                <h5 class="features-title">Sobre mi&nbsp;&nbsp;</h5>
-                                <p>Una presentación más extendida</p>
-                            </div>
-                        </a></div>
-                        <!-- ***** Features Small Item End ***** -->
-                    </div>
-                </div>
-            </div>
-        </div>
+  <main class="container my-5">
+    <section id="sobre-mi">
+      <h2 class="mb-4">Sobre mí</h2>
+      <p>Soy programador y el lenguaje con el que trabajo es PHP mediante el framework Laravel, el cual es muy útil porque facilita las estructuras de los sitios, y nos sirve de soporte para los proyectos que van solicitando en lo que se ellos llaman "automatizar procesos" que es una forma de eficientar el uso de herramientas de trabajo.</p>
+      <p>El uso de la base de datos es imprescindible ya que en cualquier empresa la información es primordial a la hora de realizar procesos, entonces gestionar los datos y usarlos para el propósito de mejorar la muestra de datos destacados, además que se busca agilizar la forma en la que se visualizan actualmente, es un reto interesante.</p>
+      <p>Por ejemplo: el desarrollar sistemas de gestión para el uso de producción.</p>
+      <p>Normalmente en mi tiempo como estudiante desarrollé un negocio como WISP (Proveedor de Servicio de Internet Inalámbrico) donde instalé, configuré e incluso realicé montaje en torres arriostradas, también me gustan los temas de programación.</p>
+      <p>Y con esto quiero enfocarme:</p>
+      <p>El desarrollo web es lo que más me gusta, Como ya lo mencioné, tengo un website el cual sirve para mostrar los proyectos y cosas nuevas que aprendo, por ejemplo:</p>
+      <ul class="ul-personalizado">
+        <li>Administrar las funciones del sitio</li>
+        <li>Aprender de seguridad informática</li>
+        <li>Conocer formatos de código que pueden incluirse para hacer intuitivo el sitio sin depender de plugins o programas externos.</li>
+        <li>Último pero menos importante: Impulsar mi #MarcaPersonal</li>
+      </ul>
+      <p>Por lo pronto es todo.</p>
+      <p>Saludos 👋</p>
     </section>
-    <!-- ***** Features Small End ***** -->
-
-    <!-- ***** Features Big Item Start ***** -->
-    <section class="section padding-top-70 padding-bottom-0" id="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
-                    <div class="left-heading">
-                        <h2 class="section-title">Un resumen de mi vida</h2>
-                    </div>
-                    <div class="left-text">
-                        <p>Hola, me llamo Brayam Teofilo Jimenez. </p>
-                        <p>Soy una persona fanática de la tecnología y en cierta manera de la ciencia, 
-                            me gustan mucho estos temas porque que todo comenzó cuando aprendí a usar una computadora y saber que existía un mundo increíble.</p> 
-                        <p>También disfruto de ver Anime, en realidad por la pandemia que sobraba mucho tiempo, honéstame era de los que decía que 
-                            nuca vería anime, y al día de hoy ya es un habito jeje</p>
-                        <p>Aun soy estudiante en el Centro Universitario UAEMex Atlacomulco en la carrera de ingeniería en Computación. </p>
-                    </div>
-                </div>
+    <section id="proyectos" class="mt-5">
+      <h2 class="mb-4">Proyectos</h2>
+      <p>Como programador el objetivo principal es "automatizar procesos" quiere decir que es tomar la funcionalidad que hacen a papel y que este sea funcional en un sistema que se ocupe con una computadora o dispositovo como tablet o incluso celular</p>
+      <p>Y generar los ajustes requeridos, a eso en el trabajo actual se le denomina automatizar, tambien a aquel proceso que hacen en un documento en excel y no requiere de calculos complejos</p>
+      <p>Un ejemplo de ello son algunos repositorios que tengo alojados en GitHub que no presentan ni inluyen informacion confidencial, solo la estructura funcional:</p>
+      <!-- Repositorio de GitHub -->
+      <div class="row">
+        <div class="col-md-6">
+          <div id="repo-card" class="card bg-dark-mode">
+            <div class="card-body">
+                <h5 class="card-title" id="repo-name">Nombre del repositorio</h5>
+                <p class="card-text" id="repo-description">Descripción del repositorio.</p>
+                <p class="card-text">
+                    <small class="text-muted"><span class="icon">🖥️</span><span id="repo-language">Lenguaje</span></small>
+                    <small class="text-muted"><span class="icon">⭐</span><span id="repo-stars">0</span></small>
+                </p>
+                <a href="#" id="repo-url" class="btn btn-primary">Ver en GitHub</a>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="hr"></div>
-                </div>
-            </div>
+          </div>
         </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
-                    <div class="left-heading">
-                        <h2 class="section-title">¿A que me dedico?</h2>
-                    </div>
-                    <div class="left-text">
-                        <p>Parte de mi conocimiento empírico me llevo a dedicarme en el área de redes de internet donde tengo un negocio asociado WISP 
-                            (proveedor de servicio de internet inalámbrico local). </p>
-                        <p>Además que por varios años trabajaba en un ciber donde despertó 
-                            mi curiosidad en este área, tengo que admitir que gracias a eso aprendí a Formatear computadoras y conocer sobre instalaciones. </p>
-                    </div>
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/right-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
-                </div>
+        <div class="col-md-6">
+          <div id="repo-card-2" class="card bg-dark-mode">
+            <div class="card-body">
+                <h5 class="card-title" id="repo-name-2">Nombre del repositorio</h5>
+                <p class="card-text" id="repo-description-2">Descripción del repositorio.</p>
+                <p class="card-text">
+                    <small class="text-muted"><span class="icon">🖥️</span><span id="repo-language-2">Lenguaje</span></small>
+                    <small class="text-muted"><span class="icon">⭐</span><span id="repo-stars-2">0</span></small>
+                </p>
+                <a href="#" id="repo-url-2" class="btn btn-primary">Ver en GitHub</a>
             </div>
+          </div>
         </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/tercero.jpg" class="rounded img-fluid d-block mx-auto" alt="App">
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
-                    <div class="left-heading">
-                        <h2 class="section-title">¿Tengo algún propósito? </h2>
-                    </div>
-                    <div class="left-text">
-                        <p>Claro que sí, ya mencioné algunos tópicos de interés personal, pero también quiero que esto se vea reflejado en internet, 
-                            porque considero plenamente si alguien no tiene presencia en internet es como carecer de una habilidad que esta para cualquier 
-                            persona con una conexión a internet y un dispositivo moderadamente funcional para conectarse a internet (dispense por redundar). </p> 
-                        <p>Y quiero terminar aquí con un: ¡Gracias por leer hasta aquí! ❤</p>
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="hr"></div>
-                </div>
-            </div>
-        </div>
-
+      </div>
     </section>
-    <!-- ***** Features Big Item End ***** -->
-
-    <!-- ***** Home Parallax Start ***** 
-    <section class="mini" id="work-process">
-        <div class="mini-content">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-lg-3 col-lg-6">
-                        <div class="info">
-                            <h1>Work Process</h1>
-                            <p>Aenean nec tempor metus. Maecenas ligula dolor, commodo in imperdiet interdum, vehicula ut ex. Donec ante diam.</p>
-                        </div>
-                    </div>
-                </div>
-            -->
-                <!-- ***** Mini Box Start ***** 
-                <div class="row">
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Get Ideas</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Sketch Up</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Discuss</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Revise</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Approve</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Launch</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                </div>
-                ***** Mini Box End ***** -->
-            </div>
-        </div>
+    <section id="contacto" class="mt-5">
+      <h2 class="mb-4">Contacto</h2>
+      <div class="d-flex flex-wrap">
+        <a href="https://linkedin.com/in/tu-perfil" class="btn btn-outline-light m-2" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/BraTeoMX" class="btn btn-outline-light m-2" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="mailto:tu-email@ejemplo.com" class="btn btn-outline-light m-2">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+        <a href="https://twitter.com/tu-perfil" class="btn btn-outline-light m-2" target="_blank">
+          <i class="fab fa-twitter"></i> Twitter
+        </a>
+        <a href="https://facebook.com/tu-perfil" class="btn btn-outline-light m-2" target="_blank">
+          <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://gitlab.com/tu-perfil" class="btn btn-outline-light m-2" target="_blank">
+          <i class="fab fa-gitlab"></i> GitLab
+        </a>
+      </div>
     </section>
-    <!-- ***** Home Parallax End ***** -->
+  </main>
 
-    <!-- ***** Testimonials Start ***** 
-    <section class="section" id="testimonials">
-        <div class="container">
-             ***** Section Title Start ***** 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="center-heading">
-                        <h2 class="section-title">What do they say?</h2>
-                    </div>
-                </div>
-                <div class="offset-lg-3 col-lg-6">
-                    <div class="center-text">
-                        <p>Donec tempus, sem non rutrum imperdiet, lectus orci fringilla nulla, at accumsan elit eros a turpis. Ut sagittis lectus libero.</p>
-                    </div>
-                </div>
-            </div>
-             ***** Section Title End ***** -->
+  <footer class="footer bg-dark-mode py-4 text-center">
+    <div class="container">
+      <p class="mb-0">© 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
-            <div class="row">
-                <!-- ***** Testimonials Item Start *****
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="team-item">
-                        <div class="team-content">
-                            <i><img src="assets/images/testimonial-icon.png" alt=""></i>
-                            <p>Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus odio.</p>
-                            <div class="user-image">
-                                <img src="http://placehold.it/60x60" alt="">
-                            </div>
-                            <div class="team-info">
-                                <h3 class="user-name">Catherine Soft</h3>
-                                <span>Managing Director</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                ***** Testimonials Item End ***** -->
-                
-                <!-- ***** Testimonials Item Start ***** 
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="team-item">
-                        <div class="team-content">
-                            <i><img src="assets/images/testimonial-icon.png" alt=""></i>
-                            <p>Integer molestie aliquam gravida. Nullam nec arcu finibus, imperdiet nulla vitae, placerat nibh. Cras maximus venenatis molestie.</p>
-                            <div class="user-image">
-                                <img src="http://placehold.it/60x60" alt="">
-                            </div>
-                            <div class="team-info">
-                                <h3 class="user-name">Kelvin Wood</h3>
-                                <span>Digital Marketer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                ***** Testimonials Item End ***** -->
-                
-                <!-- ***** Testimonials Item Start ***** 
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="team-item">
-                        <div class="team-content">
-                            <i><img src="assets/images/testimonial-icon.png" alt=""></i>
-                            <p>Quisque diam odio, maximus ac consectetur eu, auctor non lorem. Cras quis est non ante ultrices molestie. Ut vehicula et diam at aliquam.</p>
-                            <div class="user-image">
-                                <img src="http://placehold.it/60x60" alt="">
-                            </div>
-                            <div class="team-info">
-                                <h3 class="user-name">David Martin</h3>
-                                <span>Website Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                ***** Testimonials Item End ***** -->
-            </div>
-        </div>
-    </section>
-    <!-- ***** Testimonials End ***** -->
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
-    <!-- ***** Pricing Plans Start ***** 
-    <section class="section colored" id="pricing-plans">
-        <div class="container">
-            ***** Section Title Start *****
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="center-heading">
-                        <h2 class="section-title">Pricing Plans</h2>
-                    </div>
-                </div>
-                <div class="offset-lg-3 col-lg-6">
-                    <div class="center-text">
-                        <p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis congue risus volutpat.</p>
-                    </div>
-                </div>
-            </div>
-            ***** Section Title End ***** -->
+  <!-- Script para mostrar la información del repositorio -->
+  <script>
+    async function getRepoData(username, repo) {
+        const response = await fetch(`https://api.github.com/repos/${username}/${repo}`);
+        const repoData = await response.json();
+        return repoData;
+    }
 
-            <div class="row">
-                <!-- ***** Pricing Item Start *****
-                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
-                    <div class="pricing-item">
-                        <div class="pricing-header">
-                            <h3 class="pricing-title">Starter</h3>
-                        </div>
-                        <div class="pricing-body">
-                            <div class="price-wrapper">
-                                <span class="currency">$</span>
-                                <span class="price">14.50</span>
-                                <span class="period">monthly</span>
-                            </div>
-                            <ul class="list">
-                                <li class="active">60 GB space</li>
-                                <li class="active">600 GB transfer</li>
-                                <li class="active">Pro Design Panel</li>
-                                <li>15-minute support</li>
-                                <li>Unlimited Emails</li>
-                                <li>24/7 Security</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="#" class="main-button">Purchase Now</a>
-                        </div>
-                    </div>
-                </div>
-                ***** Pricing Item End ***** -->
+    async function displayRepo() {
+        const repoData1 = await getRepoData('BraTeoMX', 'Laravel-8-PHP-10');
+        document.getElementById('repo-name').textContent = repoData1.name;
+        document.getElementById('repo-description').textContent = repoData1.description;
+        document.getElementById('repo-url').href = repoData1.html_url;
+        document.getElementById('repo-url').textContent = "Ver en GitHub";
+        document.getElementById('repo-stars').textContent = `${repoData1.stargazers_count}`;
+        document.getElementById('repo-language').textContent = repoData1.language;
 
-                <!-- ***** Pricing Item Start ***** 
-                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-                    <div class="pricing-item active">
-                        <div class="pricing-header">
-                            <h3 class="pricing-title">Premium</h3>
-                        </div>
-                        <div class="pricing-body">
-                            <div class="price-wrapper">
-                                <span class="currency">$</span>
-                                <span class="price">21.50</span>
-                                <span class="period">monthly</span>
-                            </div>
-                            <ul class="list">
-                                <li class="active">120 GB space</li>
-                                <li class="active">1200 GB transfer</li>
-                                <li class="active">Pro Design Panel</li>
-                                <li class="active">15-minute support</li>
-                                <li>Unlimited Emails</li>
-                                <li>24/7 Security</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="#" class="main-button">Purchase Now</a>
-                        </div>
-                    </div>
-                </div>
-                 ***** Pricing Item End ***** -->
+        const repoData2 = await getRepoData('BraTeoMX', 'inicio');
+        document.getElementById('repo-name-2').textContent = repoData2.name;
+        document.getElementById('repo-description-2').textContent = repoData2.description;
+        document.getElementById('repo-url-2').href = repoData2.html_url;
+        document.getElementById('repo-url-2').textContent = "Ver en GitHub";
+        document.getElementById('repo-stars-2').textContent = `${repoData2.stargazers_count}`;
+        document.getElementById('repo-language-2').textContent = repoData2.language;
+    }
 
-                <!-- ***** Pricing Item Start ***** 
-                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
-                    <div class="pricing-item">
-                        <div class="pricing-header">
-                            <h3 class="pricing-title">Advanced</h3>
-                        </div>
-                        <div class="pricing-body">
-                            <div class="price-wrapper">
-                                <span class="currency">$</span>
-                                <span class="price">42.00</span>
-                                <span class="period">monthly</span>
-                            </div>
-                            <ul class="list">
-                                <li class="active">250 GB space</li>
-                                <li class="active">5000 GB transfer</li>
-                                <li class="active">Pro Design Panel</li>
-                                <li class="active">15-minute support</li>
-                                <li class="active">Unlimited Emails</li>
-                                <li class="active">24/7 Security</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="#" class="main-button">Purchase Now</a>
-                        </div>
-                    </div>
-                </div>
-                ***** Pricing Item End ***** -->
-            </div>
-        </div>
-    </section>
-    <!-- ***** Pricing Plans End ***** -->
-
-    <!-- ***** Counter Parallax Start ***** 
-    <section class="counter">
-        <div class="content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="count-item decoration-bottom">
-                            <strong>126</strong>
-                            <span>Projects</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="count-item decoration-top">
-                            <strong>63</strong>
-                            <span>Happy Clients</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="count-item decoration-bottom">
-                            <strong>18</strong>
-                            <span>Awards Wins</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="count-item">
-                            <strong>27</strong>
-                            <span>Countries</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    ***** Counter Parallax End ***** -->   
-
-    <!-- ***** Blog Start ***** -->
-    <section class="section" id="blog">
-        <div class="container">
-            <!-- ***** Section Title Start ***** -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="center-heading">
-                        <h2 class="section-title">Blog</h2>
-                    </div>
-                </div>
-                <div class="offset-lg-3 col-lg-6">
-                    <div class="center-text">
-                        <p>En esta sección encontraras mis entradas de blogs públicos, los cuales realizo con gusto, accede a aquellos que te interesen.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- ***** Section Title End ***** -->
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="blog-post-thumb">
-                        <div class="img">
-                            <img src="assets/images/iconos-principal/blog1.jpg" alt="" width="300">
-                        </div>
-                        <div class="blog-content">
-                            <h3>
-                            <a href="tesina.html">NFT: Estados del Arte, tendencias y retos&nbsp;</a> </h3>
-                            <div class="text">
-                              Tesina dedicada a los NFT, también conocidos como Non Fungibles Tokens, explicando ejemplos de su función y aplicaciones en el ámbito tecnológico.
-                           </div>
-                            <a href="tesina.html" class="main-button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="blog-post-thumb">
-                        <div class="img">
-                            <img src="assets/images/iconos-principal/lol - copia.jpeg" alt="" width="320">
-                        </div>
-                        <div class="blog-content">
-                            <h3> <a href="ligo-leyen.html">League of Legends recomendado por...</a> </h3>
-                          
-<div class="text">
-              <p> Una historia poco común del cómo conocí este juego y del porque aun lo sigo jugando, tanto asi que le termine escribiendo un blog jeje.</p>
-              
-</div>
-                          <a href="ligo-leyen.html" class="main-button">Read More</a>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="blog-post-thumb">
-                        <div class="img">
-                            <img src="assets/images/iconos-principal/attack-on-titan1.jpg" alt="" width="350">
-                        </div>
-                        <div class="blog-content">
-                            <h3>
-                             <a href="anime.html">El anime en tiempos de pandemia</a></h3>
-                            <div class="text">
-                            La pandemia provoco que muchos hábitos cambiaran, tal como el tipo de contenido que comencé a visualizar, y agradezco profundamente. </div>
-                            <a href="anime.html" class="main-button">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Blog End ***** -->
-
-    <!-- ***** Contact Us Start ***** -->
-    <section class="section colored" id="contact-us">
-        <div class="container">
-            <!--***** Section Title Start *****--> 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="center-heading">
-                        <h2 class="section-title">Medios de Contacto</h2>
-                    </div>
-                </div>
-                <div class="offset-lg-3 col-lg-6">
-                    <div class="center-text">
-                        <p>Puedes contactarme con el siguiente correo: </p>
-                        <h4>BraTeoMX@gmail.com</h4>
-                        <p> </p>
-                        <p>Abajo están los medios de contacto del resto de mis redes sociales, precisamente en los iconos, esto después lo estaré modificando</p>
-                    </div>
-                </div>
-
-                <!-- Comentario para evitar errores -->
-                
-                </div>
-                <Footer>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <ul class="social">
-                                    <li><a href="https://linkedin.com/in/BraTeoMX"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="https://github.com/BraTeoMX"><i class="fa fa-github"></i></a></li>
-                                    <li><a href="https://twitter.com/BraTeoMX"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="https://facebook.com/BraTeoMX"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="https://instagram.com/BraTeoMX"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="https://soundcloud.com/BraTeoMX"><i class="fa fa-soundcloud"></i></a></li>
-                                    
-                                </ul>
-                                <h1>  </h1>
-                                <p>. </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </Footer>
-            <!-- hasta aqui termina el cambio en caso de equivocarme -->
-            </div>
-            <!--***** Section Title End ***** -->
-
-            <!--<div class="row"> -->
-                <!-- ***** Contact Text Start ***** 
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h5 class="margin-bottom-30">Keep in touch</h5>
-                    <div class="contact-text">
-                        <p>110-220 Quisque diam odio, maximus ac consectetur eu, 10260
-                        <br>auctor non lorem</p>
-                        <p>You are NOT allowed to re-distribute Softy Pinko template on any template collection websites. Thank you.</p>
-                    </div>
-                </div>
-                ***** Contact Text End ***** -->
-
-                <!-- ***** Contact Form Start ***** 
-                <div class="col-lg-8 col-md-6 col-sm-12">
-                    <div class="contact-form">
-                        <form id="contact" action="" method="get">
-                          <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12">
-                              <fieldset>
-                                <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12">
-                              <fieldset>
-                                <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <button type="submit" id="form-submit" class="main-button">Send Message</button>
-                              </fieldset>
-                            </div>
-                          </div>
-                        </form>
-                    </div>
-                </div>
-                ***** Contact Form End ***** -->
-            <!--</div>-->
-        </div>
-    </section>
-    <!--  ***** Contact Us End ***** -->
-    
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="copyright">Gracias por llegar hasta aqui :")</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
-
-  </body>
+    displayRepo();
+  </script>
+</body>
 </html>
