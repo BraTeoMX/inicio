@@ -54,22 +54,33 @@
   </header>
 
   <main class="container my-5">
-    <section id="sobre-mi">
-      <h2 class="mb-4">Paso a paso</h2>
-      <p>Soy programador y el lenguaje con el que trabajo es PHP mediante el framework Laravel, el cual es muy útil porque facilita las estructuras de los sitios, y nos sirve de soporte para los proyectos que van solicitando en lo que se ellos llaman "automatizar procesos" que es una forma de eficientar el uso de herramientas de trabajo.</p>
-      <p>El uso de la base de datos es imprescindible ya que en cualquier empresa la información es primordial a la hora de realizar procesos, entonces gestionar los datos y usarlos para el propósito de mejorar la muestra de datos destacados, además que se busca agilizar la forma en la que se visualizan actualmente, es un reto interesante.</p>
-      <p>Por ejemplo: el desarrollar sistemas de gestión para el uso de producción.</p>
-      <p>Normalmente en mi tiempo como estudiante desarrollé un negocio como WISP (Proveedor de Servicio de Internet Inalámbrico) donde instalé, configuré e incluso realicé montaje en torres arriostradas, también me gustan los temas de programación.</p>
-      <p>Y con esto quiero enfocarme:</p>
-      <p>El desarrollo web es lo que más me gusta, Como ya lo mencioné, tengo un website el cual sirve para mostrar los proyectos y cosas nuevas que aprendo, por ejemplo:</p>
-      <ul class="ul-personalizado">
-        <li>Administrar las funciones del sitio</li>
-        <li>Aprender de seguridad informática</li>
-        <li>Conocer formatos de código que pueden incluirse para hacer intuitivo el sitio sin depender de plugins o programas externos.</li>
-        <li>Último pero menos importante: Impulsar mi #MarcaPersonal</li>
-      </ul>
-      <p>Por lo pronto es todo.</p>
-      <p>Saludos 👋</p>
+    <section id="wsip">
+      <h2 class="mb-4">Proveedor de Servicios de Internet Inalámbrico (WSIP)</h2>
+      <p>Mi trabajo acerca del conocimiento sobre redes de internet se puede definir como WSIP, que son las siglas en inglés de Proveedor de Servicios de Internet Inalámbricos. En este apartado, daré más detalles sobre en qué consiste.</p>
+      
+      <h3>Conociendo la Zona</h3>
+      <p>En primer lugar, es fundamental conocer la zona en donde vas a proveer el servicio, porque depende del tipo de antenas que estén como punto de acceso y la cobertura o línea de vista que poseen. Un ejemplo para entender esto es imaginarnos que es de noche y tienes una lámpara; al encenderla, dependiendo del tipo de lámpara, es el alcance que logrará iluminar y también la cobertura. Muy similar ocurre con las antenas, con la diferencia de que entran en juego detalles técnicos como el tipo de antena (lineales, de panel y omnidireccional), la frecuencia de trabajo y el factor de ruido.</p>
+      <p>Si bien ya hablé de la línea de vista, se debe verificar que no existan obstáculos como árboles, construcciones o cualquier otra barrera física que pueda interferir con la señal.</p>
+
+      <h3>Configuración del Enlace</h3>
+      <p>Este apartado comprende de forma general dos partes: la configuración del enlace (antena en el lugar de instalación y antena base) y la administración de los clientes en cuanto a las direcciones IP proporcionadas por el proveedor principal y la IP de administración.</p>
+      
+      <h4>Configuración del Router Wifi</h4>
+      <p>Normalmente se comienza con la configuración del router wifi, el cual suele tener una dirección IP por defecto como 192.168.0.1. Esta dirección no necesita ser modificada a menos que ya esté en uso. Aquí se establece el nombre de la red wifi y la contraseña.</p>
+      
+      <h4>Configuración de la Antena</h4>
+      <p>La antena exterior en el domicilio debe apuntar a la antena base para generar el enlace. Se trabaja para encontrar la señal más óptima y vincular la dirección IP para su administración. Es importante usar la IP correcta para evitar problemas de conexión y poder acceder remotamente.</p>
+
+      <h3>Administración de Direcciones IP</h3>
+      <p>Este apartado se divide en dos puntos: la dirección IP del proveedor y la IP de administración.</p>
+      
+      <h4>Dirección IP del Proveedor</h4>
+      <p>La dirección IP del proveedor debe ser única y no debe ser usada por ninguna antena o equipo de administración para evitar conflictos de comunicación. Además, se consideran las DNS, que son como traductores relacionados con las direcciones IP.</p>
+
+      <h4>IP de Administración</h4>
+      <p>En la IP de administración, comúnmente se usa un RB Mikrotik para gestionar las conexiones de las antenas base y las estaciones de clientes. Es importante tener IPs únicas y evitar repetir segmentos para mantener una administración eficiente.</p>
+
+      <p>Se que hay más complejidad en el contexto de la conexión, pero de manera general es como se llevan a cabo los enlaces WISP.</p>
     </section>
   </main>
 
