@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BraTeoMX</title>
   <meta name="description" content="Soy Brayam y gracias por visitar mi Blog hecho con GitHub, estoy en diversas redes sociales como BraTeoMX, gracias.">
   <meta name="author" content="BraTeoMX">
-  <meta name="keywords" content="BraTeoMX, brateomx,brayam teofilo jimenez, desarrollador, tecnología, redes, programacion, web">
-
-  <!-- Favicon -->
+  <meta name="keywords" content="BraTeoMX, brateomx, brayam teofilo jimenez, desarrollador, tecnología, redes, programacion, web">
   <link rel="icon" href="img/hojeada.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- Bootstrap CSS -->
@@ -18,13 +15,11 @@
   <!-- Personalizado CSS -->
   <link rel="stylesheet" href="css/personalizado.css">
 </head>
-
 <body>
   <nav class="navbar navbar-expand-lg bg-dark-mode sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <i class="fas fa-home"></i>
-        Mi Sitio
+        <i class="fas fa-home"></i> Mi Sitio
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,16 +27,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+            <a class="nav-link" href="#sobre-mi" data-es="Sobre mí" data-en="About Me">Sobre mí</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#proyectos">Proyectos</a>
+            <a class="nav-link" href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
+            <a class="nav-link" href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-light nav-link" id="language-toggle">English</button>
           </li>
         </ul>
       </div>
@@ -50,101 +48,96 @@
 
   <header id="inicio" class="bg-primary text-white text-center py-5">
     <div class="container">
-      <h1>Bienvenido a Mi Sitio Web</h1>
-      <p class="lead">Aqui agregare algunos cambios, asi, simple y bonito... creo 🤷‍♂️</p>
+      <h1 data-es="Bienvenido a Mi Sitio Web" data-en="Welcome to My Website">Bienvenido a Mi Sitio Web</h1>
+      <p class="lead" data-es="Aqui agregare algunos cambios, asi, simple y bonito... creo 🤷‍♂️" data-en="Here I will make some changes, simple and nice... I think 🤷‍♂️">Aqui agregare algunos cambios, asi, simple y bonito... creo 🤷‍♂️</p>
     </div>
   </header>
 
   <main class="container my-5">
     <section id="sobre-mi">
-      <h2 class="mb-4">Sobre mí</h2>
-      <p>Soy programador y el lenguaje con el que trabajo es PHP mediante el framework Laravel, el cual es muy útil porque facilita las estructuras de los sitios, y nos sirve de soporte para los proyectos que van solicitando en lo que se ellos llaman "automatizar procesos" que es una forma de eficientar el uso de herramientas de trabajo.</p>
-      <p>El uso de la base de datos es imprescindible ya que en cualquier empresa la información es primordial a la hora de realizar procesos, entonces gestionar los datos y usarlos para el propósito de mejorar la muestra de datos destacados, además que se busca agilizar la forma en la que se visualizan actualmente, es un reto interesante.</p>
-      <p>Por ejemplo: el desarrollar sistemas de gestión para el uso de producción.</p>
-      <p>Normalmente en mi tiempo como estudiante desarrollé un negocio como <a href="page/redes-internet.html">WISP (Proveedor de Servicio de Internet Inalámbrico)</a> donde instalé, configuré e incluso realicé montaje en torres arriostradas, también me gustan los temas de programación.</p>
-      <p>Y con esto quiero enfocarme:</p>
-      <p>El desarrollo web es lo que más me gusta, Como ya lo mencioné, tengo un website el cual sirve para mostrar los proyectos y cosas nuevas que aprendo, por ejemplo:</p>
+      <h2 class="mb-4" data-es="Sobre mí" data-en="About Me">Sobre mí</h2>
+      <p data-es="Soy programador y el lenguaje con el que trabajo es PHP mediante el framework Laravel, el cual es muy útil porque facilita las estructuras de los sitios, y nos sirve de soporte para los proyectos que van solicitando en lo que se ellos llaman 'automatizar procesos' que es una forma de eficientar el uso de herramientas de trabajo." data-en="I am a programmer and the language I work with is PHP using the Laravel framework, which is very useful because it facilitates the structures of the sites and supports the projects that are requested in what they call 'process automation', which is a way to make the use of work tools more efficient.">Soy programador y el lenguaje con el que trabajo es PHP mediante el framework Laravel, el cual es muy útil porque facilita las estructuras de los sitios, y nos sirve de soporte para los proyectos que van solicitando en lo que se ellos llaman 'automatizar procesos' que es una forma de eficientar el uso de herramientas de trabajo.</p>
+      <p data-es="El uso de la base de datos es imprescindible ya que en cualquier empresa la información es primordial a la hora de realizar procesos, entonces gestionar los datos y usarlos para el propósito de mejorar la muestra de datos destacados, además que se busca agilizar la forma en la que se visualizan actualmente, es un reto interesante." data-en="The use of databases is essential because in any company information is crucial when carrying out processes, so managing data and using it to improve the display of highlighted data, as well as seeking to speed up the way it is currently viewed, is an interesting challenge.">El uso de la base de datos es imprescindible ya que en cualquier empresa la información es primordial a la hora de realizar procesos, entonces gestionar los datos y usarlos para el propósito de mejorar la muestra de datos destacados, además que se busca agilizar la forma en la que se visualizan actualmente, es un reto interesante.</p>
+      <p data-es="Por ejemplo: el desarrollar sistemas de gestión para el uso de producción." data-en="For example: developing management systems for production use.">Por ejemplo: el desarrollar sistemas de gestión para el uso de producción.</p>
+      <p data-es="Normalmente en mi tiempo como estudiante desarrollé un negocio como WISP (Proveedor de Servicio de Internet Inalámbrico) donde instalé, configuré e incluso realicé montaje en torres arriostradas, también me gustan los temas de programación." data-en="Normally, during my time as a student, I developed a business as a WISP (Wireless Internet Service Provider) where I installed, configured, and even assembled on braced towers. I also like programming topics.">Normalmente en mi tiempo como estudiante desarrollé un negocio como WISP (Proveedor de Servicio de Internet Inalámbrico) donde instalé, configuré e incluso realicé montaje en torres arriostradas, también me gustan los temas de programación.</p>
+      <p data-es="Y con esto quiero enfocarme:" data-en="And this is what I want to focus on:">Y con esto quiero enfocarme:</p>
+      <p data-es="El desarrollo web es lo que más me gusta. Como ya lo mencioné, tengo un website el cual sirve para mostrar los proyectos y cosas nuevas que aprendo, por ejemplo:" data-en="Web development is what I like the most. As I mentioned before, I have a website that serves to show the projects and new things I learn, for example:">El desarrollo web es lo que más me gusta. Como ya lo mencioné, tengo un website el cual sirve para mostrar los proyectos y cosas nuevas que aprendo, por ejemplo:</p>
       <ul class="ul-personalizado">
-        <li>Administrar las funciones del sitio</li>
-        <li>Aprender de seguridad informática</li>
-        <li>Conocer formatos de código que pueden incluirse para hacer intuitivo el sitio sin depender de plugins o programas externos.</li>
-        <li>Último pero menos importante: Impulsar mi #MarcaPersonal</li>
+        <li data-es="Administrar las funciones del sitio" data-en="Manage site functions">Administrar las funciones del sitio</li>
+        <li data-es="Aprender de seguridad informática" data-en="Learn about computer security">Aprender de seguridad informática</li>
+        <li data-es="Conocer formatos de código que pueden incluirse para hacer intuitivo el sitio sin depender de plugins o programas externos." data-en="Learn about code formats that can be included to make the site intuitive without relying on plugins or external programs.">Conocer formatos de código que pueden incluirse para hacer intuitivo el sitio sin depender de plugins o programas externos.</li>
+        <li data-es="Último pero menos importante: Impulsar mi #MarcaPersonal" data-en="Last but not least: Boost my #PersonalBrand">Último pero menos importante: Impulsar mi #MarcaPersonal</li>
       </ul>
-      <p>Por lo pronto es todo.</p>
-      <p>Saludos 👋</p>
+      <p data-es="Por lo pronto es todo." data-en="That's all for now.">Por lo pronto es todo.</p>
+      <p data-es="Saludos 👋" data-en="Greetings 👋">Saludos 👋</p>
     </section>
+
     <section id="proyectos" class="mt-5">
-      <h2 class="mb-4">Proyectos</h2>
-      <p>Como programador el objetivo principal es "automatizar procesos" quiere decir que es tomar la funcionalidad que hacen a papel y que este sea funcional en un sistema que se ocupe con una computadora o dispositovo como tablet o incluso celular</p>
-      <p>Y generar los ajustes requeridos, a eso en el trabajo actual se le denomina automatizar, tambien a aquel proceso que hacen en un documento en excel y no requiere de calculos complejos</p>
-      <p>Un ejemplo de ello son algunos repositorios que tengo alojados en GitHub que no presentan ni inluyen informacion confidencial, solo la estructura funcional:</p>
-      <!-- Repositorio de GitHub -->
+      <h2 class="mb-4" data-es="Proyectos" data-en="Projects">Proyectos</h2>
+      <p data-es="Como programador el objetivo principal es 'automatizar procesos' quiere decir que es tomar la funcionalidad que hacen a papel y que este sea funcional en un sistema que se ocupe con una computadora o dispositovo como tablet o incluso celular" data-en="As a programmer, the main objective is 'process automation', which means taking the functionality that is done on paper and making it functional in a system that can be used with a computer or a device like a tablet or even a cell phone.">Como programador el objetivo principal es 'automatizar procesos' quiere decir que es tomar la funcionalidad que hacen a papel y que este sea funcional en un sistema que se ocupe con una computadora o dispositovo como tablet o incluso celular</p>
+      <p data-es="Y generar los ajustes requeridos, a eso en el trabajo actual se le denomina automatizar, tambien a aquel proceso que hacen en un documento en excel y no requiere de calculos complejos" data-en="And making the required adjustments, that in the current job is called automation, also to that process that is done in an excel document and does not require complex calculations.">Y generar los ajustes requeridos, a eso en el trabajo actual se le denomina automatizar, tambien a aquel proceso que hacen en un documento en excel y no requiere de calculos complejos</p>
+      <p data-es="Un ejemplo de ello son algunos repositorios que tengo alojados en GitHub que no presentan ni inluyen informacion confidencial, solo la estructura funcional:" data-en="An example of this are some repositories that I have hosted on GitHub that do not present or include confidential information, only the functional structure:">Un ejemplo de ello son algunos repositorios que tengo alojados en GitHub que no presentan ni inluyen informacion confidencial, solo la estructura funcional:</p>
       <div class="row">
         <div class="col-md-6">
           <div id="repo-card" class="card bg-dark-mode">
             <div class="card-body">
-              <h5 class="card-title" id="repo-name">Nombre del repositorio</h5>
-              <p class="card-text" id="repo-description">Descripción del repositorio.</p>
+              <h5 class="card-title" id="repo-name" data-es="Nombre del repositorio" data-en="Repository Name">Nombre del repositorio</h5>
+              <p class="card-text" id="repo-description" data-es="Descripción del repositorio." data-en="Repository description.">Descripción del repositorio.</p>
               <p class="card-text">
-                <small class="text-muted"><span class="icon">🖥️</span><span id="repo-language">Lenguaje</span></small>
+                <small class="text-muted"><span class="icon">🖥️</span><span id="repo-language" data-es="Lenguaje" data-en="Language">Lenguaje</span></small>
                 <small class="text-muted"><span class="icon">⭐</span><span id="repo-stars">0</span></small>
               </p>
-              <a href="#" id="repo-url" class="btn btn-primary">Ver en GitHub</a>
+              <a href="#" id="repo-url" class="btn btn-primary" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a>
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div id="repo-card-2" class="card bg-dark-mode">
             <div class="card-body">
-              <h5 class="card-title" id="repo-name-2">Nombre del repositorio</h5>
-              <p class="card-text" id="repo-description-2">Descripción del repositorio.</p>
+              <h5 class="card-title" id="repo-name-2" data-es="Nombre del repositorio" data-en="Repository Name">Nombre del repositorio</h5>
+              <p class="card-text" id="repo-description-2" data-es="Descripción del repositorio." data-en="Repository description.">Descripción del repositorio.</p>
               <p class="card-text">
-                <small class="text-muted"><span class="icon">🖥️</span><span id="repo-language-2">Lenguaje</span></small>
+                <small class="text-muted"><span class="icon">🖥️</span><span id="repo-language-2" data-es="Lenguaje" data-en="Language">Lenguaje</span></small>
                 <small class="text-muted"><span class="icon">⭐</span><span id="repo-stars-2">0</span></small>
               </p>
-              <a href="#" id="repo-url-2" class="btn btn-primary">Ver en GitHub</a>
+              <a href="#" id="repo-url-2" class="btn btn-primary" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</a>
             </div>
           </div>
         </div>
       </div>
       <div class="container mt-5">
-        <h4>Tambien tengo la lista de mis repositorios en Git-Hub: </h4>
+        <h4 data-es="Tambien tengo la lista de mis repositorios en Git-Hub:" data-en="I also have a list of my repositories on GitHub:">Tambien tengo la lista de mis repositorios en Git-Hub:</h4>
         <a class="btn btn-success" href="https://github.com/BraTeoMX?tab=repositories" target="_blank"><i class="fab fa-github"></i> Perfil de GitHub</a>
       </div>
     </section>
+
     <section id="contacto" class="mt-5">
-      <h2 class="mb-4">Contacto</h2>
-      <p>Te comparto los links donde puedes consultar mas informacion de mi y mis proyectos, pero sobre todo si requieres contactarme lo ideal es que sea por LinkedIn, pero tambien el correo omedios como facebook o twitter</p>
+      <h2 class="mb-4" data-es="Contacto" data-en="Contact">Contacto</h2>
+      <p data-es="Te comparto los links donde puedes consultar mas informacion de mi y mis proyectos, pero sobre todo si requieres contactarme lo ideal es que sea por LinkedIn, pero tambien el correo omedios como facebook o twitter" data-en="I share the links where you can find more information about me and my projects, but above all, if you need to contact me, the best way is through LinkedIn, but also by email or social media like Facebook or Twitter.">Te comparto los links donde puedes consultar mas informacion de mi y mis proyectos, pero sobre todo si requieres contactarme lo ideal es que sea por LinkedIn, pero tambien el correo omedios como facebook o twitter</p>
       <div class="d-flex flex-wrap justify-content-center">
         <a href="https://linkedin.com/in/BraTeoMX" class="btn btn-outline-light m-2 contact-btn" target="_blank">
-          <i class="fab fa-linkedin"></i>
-          <span>LinkedIn</span>
+          <i class="fab fa-linkedin"></i> <span data-es="LinkedIn" data-en="LinkedIn">LinkedIn</span>
         </a>
         <a href="https://github.com/BraTeoMX" class="btn btn-outline-light m-2 contact-btn" target="_blank">
-          <i class="fab fa-github"></i>
-          <span>GitHub</span>
+          <i class="fab fa-github"></i> <span data-es="GitHub" data-en="GitHub">GitHub</span>
         </a>
         <a href="mailto:brateomx@gmail.com" class="btn btn-outline-light m-2 contact-btn">
-          <i class="fas fa-envelope"></i>
-          <span>Email</span>
+          <i class="fas fa-envelope"></i> <span data-es="Email" data-en="Email">Email</span>
         </a>
         <a href="https://twitter.com/BraTeoMX" class="btn btn-outline-light m-2 contact-btn" target="_blank">
-          <i class="fab fa-twitter"></i>
-          <span>Twitter</span>
+          <i class="fab fa-twitter"></i> <span data-es="Twitter" data-en="Twitter">Twitter</span>
         </a>
         <a href="https://facebook.com/BraTeoMX" class="btn btn-outline-light m-2 contact-btn" target="_blank">
-          <i class="fab fa-facebook"></i>
-          <span>Facebook</span>
+          <i class="fab fa-facebook"></i> <span data-es="Facebook" data-en="Facebook">Facebook</span>
         </a>
         <a href="https://gitlab.com/BraTeoMX" class="btn btn-outline-light m-2 contact-btn" target="_blank">
-          <i class="fab fa-gitlab"></i>
-          <span>GitLab</span>
+          <i class="fab fa-gitlab"></i> <span data-es="GitLab" data-en="GitLab">GitLab</span>
         </a>
       </div>
       <div class="text-center mt-4">
-        <h5>si el link del correo electronico no funciona, puedes copiar el correo de contacto: brateomx@gmail.com </h5>
-        <p>Si estás en esta sección y te pareció interesante como candidato ideal para trabajar en tu empresa, te puedo pedir una sola cosa:</p>
-        <p style="font-weight: bold;">Contrátame... </p>
+        <h5 data-es="si el link del correo electronico no funciona, puedes copiar el correo de contacto: brateomx@gmail.com" data-en="If the email link does not work, you can copy the contact email: brateomx@gmail.com">si el link del correo electronico no funciona, puedes copiar el correo de contacto: brateomx@gmail.com</h5>
+        <p data-es="Si estás en esta sección y te pareció interesante como candidato ideal para trabajar en tu empresa, te puedo pedir una sola cosa:" data-en="If you are in this section and found me interesting as an ideal candidate to work in your company, I can ask you one thing:">Si estás en esta sección y te pareció interesante como candidato ideal para trabajar en tu empresa, te puedo pedir una sola cosa:</p>
+        <p style="font-weight: bold;" data-es="Contrátame..." data-en="Hire me...">Contrátame...</p>
         <img src="img/chopper.webp" alt="Chopper" class="img-fluid" style="max-width: 100%; height: auto;">
       </div>
     </section>
@@ -152,15 +145,23 @@
 
   <footer class="footer bg-dark-mode py-4 text-center">
     <div class="container">
-      <p class="mb-0">© 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+      <p class="mb-0" data-es="© 2024 Mi Sitio Web. Todos los derechos reservados." data-en="© 2024 My Website. All rights reserved.">© 2024 Mi Sitio Web. Todos los derechos reservados.</p>
     </div>
   </footer>
 
-  <!-- Bootstrap Bundle with Popper -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Script para mostrar la información del repositorio -->
   <script>
+    const toggleButton = document.getElementById('language-toggle');
+    let currentLanguage = 'es';
+
+    toggleButton.addEventListener('click', () => {
+      currentLanguage = currentLanguage === 'es' ? 'en' : 'es';
+      document.querySelectorAll('[data-es]').forEach(element => {
+        element.textContent = element.getAttribute(`data-${currentLanguage}`);
+      });
+      toggleButton.textContent = currentLanguage === 'es' ? 'English' : 'Español';
+    });
+
     async function getRepoData(username, repo) {
       const response = await fetch(`https://api.github.com/repos/${username}/${repo}`);
       const repoData = await response.json();
@@ -188,5 +189,4 @@
     displayRepo();
   </script>
 </body>
-
 </html>
