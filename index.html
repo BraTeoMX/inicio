@@ -60,7 +60,9 @@
       <p data-es="Soy programador y el lenguaje con el que trabajo es PHP mediante el framework Laravel, el cual es muy útil porque facilita las estructuras de los sitios, y nos sirve de soporte para los proyectos que van solicitando en lo que se ellos llaman 'automatizar procesos' que es una forma de eficientar el uso de herramientas de trabajo." data-en="I am a programmer and the language I work with is PHP using the Laravel framework, which is very useful because it facilitates the structures of the sites and supports the projects that are requested in what they call 'process automation', which is a way to make the use of work tools more efficient.">Soy programador y el lenguaje con el que trabajo es PHP mediante el framework Laravel, el cual es muy útil porque facilita las estructuras de los sitios, y nos sirve de soporte para los proyectos que van solicitando en lo que se ellos llaman 'automatizar procesos' que es una forma de eficientar el uso de herramientas de trabajo.</p>
       <p data-es="El uso de la base de datos es imprescindible ya que en cualquier empresa la información es primordial a la hora de realizar procesos, entonces gestionar los datos y usarlos para el propósito de mejorar la muestra de datos destacados, además que se busca agilizar la forma en la que se visualizan actualmente, es un reto interesante." data-en="The use of databases is essential because in any company information is crucial when carrying out processes, so managing data and using it to improve the display of highlighted data, as well as seeking to speed up the way it is currently viewed, is an interesting challenge.">El uso de la base de datos es imprescindible ya que en cualquier empresa la información es primordial a la hora de realizar procesos, entonces gestionar los datos y usarlos para el propósito de mejorar la muestra de datos destacados, además que se busca agilizar la forma en la que se visualizan actualmente, es un reto interesante.</p>
       <p data-es="Por ejemplo: el desarrollar sistemas de gestión para el uso de producción." data-en="For example: developing management systems for production use.">Por ejemplo: el desarrollar sistemas de gestión para el uso de producción.</p>
-      <p data-es="Normalmente en mi tiempo como estudiante desarrollé un negocio como WISP (Proveedor de Servicio de Internet Inalámbrico) donde instalé, configuré e incluso realicé montaje en torres arriostradas, también me gustan los temas de programación." data-en="Normally, during my time as a student, I developed a business as a WISP (Wireless Internet Service Provider) where I installed, configured, and even assembled on braced towers. I also like programming topics.">Normalmente en mi tiempo como estudiante desarrollé un negocio como WISP (Proveedor de Servicio de Internet Inalámbrico) donde instalé, configuré e incluso realicé montaje en torres arriostradas, también me gustan los temas de programación.</p>
+      <p id="content" data-es='Normalmente en mi tiempo como estudiante desarrollé un negocio como <a href="page/redes-internet.html">WISP (Proveedor de Servicio de Internet Inalámbrico)</a> donde instalé, configuré e incluso realicé montaje en torres arriostradas, también me gustan los temas de programación.' data-en='Normally, during my time as a student, I developed a business as a <a href="page/redes-internet.html">WISP (Wireless Internet Service Provider)</a> where I installed, configured, and even assembled on braced towers. I also like programming topics.'>
+        Normalmente en mi tiempo como estudiante desarrollé un negocio como <a href="page/redes-internet.html">WISP (Proveedor de Servicio de Internet Inalámbrico)</a> donde instalé, configuré e incluso realicé montaje en torres arriostradas, también me gustan los temas de programación.
+      </p>   
       <p data-es="Y con esto quiero enfocarme:" data-en="And this is what I want to focus on:">Y con esto quiero enfocarme:</p>
       <p data-es="El desarrollo web es lo que más me gusta. Como ya lo mencioné, tengo un website el cual sirve para mostrar los proyectos y cosas nuevas que aprendo, por ejemplo:" data-en="Web development is what I like the most. As I mentioned before, I have a website that serves to show the projects and new things I learn, for example:">El desarrollo web es lo que más me gusta. Como ya lo mencioné, tengo un website el cual sirve para mostrar los proyectos y cosas nuevas que aprendo, por ejemplo:</p>
       <ul class="ul-personalizado">
@@ -158,7 +160,12 @@
     toggleButton.addEventListener('click', () => {
       currentLanguage = currentLanguage === 'es' ? 'en' : 'es';
       document.querySelectorAll('[data-es]').forEach(element => {
-        element.textContent = element.getAttribute(`data-${currentLanguage}`);
+        const content = element.getAttribute(`data-${currentLanguage}`);
+        if (content.includes('<')) {
+          element.innerHTML = content;
+        } else {
+          element.textContent = content;
+        }
       });
       toggleButton.textContent = currentLanguage === 'es' ? 'English' : 'Español';
     });
@@ -189,5 +196,6 @@
 
     displayRepo();
   </script>
+
 </body>
 </html>
